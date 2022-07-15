@@ -1,0 +1,68 @@
+:root {
+    --primary: #fafafa;
+    --secondary: rgb(73, 73, 73);
+    --shadow-button: #adadad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--primary);
+}
+
+section {
+    max-width: 40rem;
+    height: 36rem;
+    display: grid;
+    place-content: center;
+    border-radius: 31px;
+    background: var(--primary);
+    box-shadow:  5px 5px 10px #a1a1a1,
+                -5px -5px 10px #ffffff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    justify-self: center;
+    border: none;
+    color: var(--secondary);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--primary);
+    box-shadow:  4px 4px 4px var(--shadow-button),
+                -4px -4px 4px #ffffff;
+}
+
+.button:hover {
+    /* width: 152px;
+    height: 42px;
+    margin: 8px; */
+    border-radius: 5px;
+    background: var(--primary);
+    box-shadow: inset 4px 4px 4px var(--shadow-button),
+                inset -4px -4px 4px #ffffff;
+}

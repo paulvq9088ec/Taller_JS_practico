@@ -1,0 +1,40 @@
+:root {
+    --primary: #fafafa;
+    --secondary: rgb(73, 73, 73);
+    --shadow-button: #adadad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+.button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    justify-self: center;
+    border: none;
+    color: var(--secondary);
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--primary);
+    box-shadow:  4px 4px 4px var(--shadow-button),
+                -4px -4px 4px #ffffff;
+}
+
+.button:hover {
+    /* width: 152px;
+    height: 42px;
+    margin: 8px; */
+    border-radius: 5px;
+    background: var(--primary);
+    box-shadow: inset 4px 4px 4px var(--shadow-button),
+                inset -4px -4px 4px #ffffff;
+}
